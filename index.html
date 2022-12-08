@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martyna Filipiak</title>
+    <link rel="stylesheet" href="./dist/style.css">
+</head>
+<body>
+
+
+
+    <div class="main container">
+        <div class="pay">
+            <form>
+                <div class="form-group email">
+                    <label for="email">Email</label>
+                    <input required type="emial" class="form-input" id="email">
+                </div>
+                <div class="card">
+                    <div class="form-group" id="card-number">
+                        <label for="card-number">Card information</label>
+                        <input class="form-input" placeholder="1234 1234 1234 1234"pattern='^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14})$' required type="text" class="form-control" id="card-number">
+                        <div class="form-group" id="credit-cards">
+                            <img class="visa"src="./images/visa.jpg" id="visa">
+                            <img src="./images/mastercard.jpg" id="mastercard">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group card-another-info">
+                    <label style="display: none">CVC</label>
+                    <input required placeholder="MM / YY" type="text" class="form-input" id="expiration">
+                    <input required placeholder="CVC" type="text" class="form-input" id="CVC">
+                </div>
+
+                
+                <div class="form-group" id="pay-now">
+                    <button type="submit" class="btn btn-default" id="confirm-purchase">Pay</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
